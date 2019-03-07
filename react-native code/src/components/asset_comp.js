@@ -45,8 +45,8 @@ class AssetComp extends Component {
                 }),
                 method: "POST",
                 headers: {
-                    // "Content-Type": "application/json"
-                    "content-type": "multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW",
+                    "Content-Type": "application/json"
+                    // "content-type": "multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW",
                 }
             })
                 .then(response => response.json())
@@ -56,7 +56,7 @@ class AssetComp extends Component {
 
 
 
-                        alert(JSON.stringify(responseJson));
+                        alert('Successfully added asset');
 
                     } else {
                         ToastAndroid.show(
